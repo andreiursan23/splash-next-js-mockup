@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.nav_body {
+  background: $greenish-white;
+  font-family: $roboto;
+  
+  .flex_container {
+    min-height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

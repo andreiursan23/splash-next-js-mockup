@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.container {
+  font-family: $open-sans;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.375;
+  margin-bottom: 2.5rem;
+  text-align: right;
+
+  .col {
+    width: 50%;
+  }
+
+  .text {
+    padding-right: 2rem;
+
+    .title {
+      color: $orange;
+      font-size: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

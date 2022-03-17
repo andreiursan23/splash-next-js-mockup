@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.nav_list {
+  display: flex;
+  font-size: 1.125rem;
+
+  .nav_list_item {
+    margin: 0 1.875em 0 0;
+
+    .nav_link {
+      text-decoration: none;
+      @include transition(color, 0.2s, ease-in-out)
+    }
+
+    .nav_link:focus,
+    .nav_link:hover {
+      color: $green-mint;
+      @include transition(color, 0.2s, ease-in-out)
+    }
+  }
+
+  .cta_btn {
+    font-family: $open-sans;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background: $green-mint;
+    padding: 0.375em 1.375em;
+    border: 0.125em solid $green-mint;
+    border-radius: 0.3125em;
+    @include transition(all, 0.2s, ease-in-out)
+  }
+
+  .cta_btn:focus,
+  .cta_btn:hover {
+    color: $green-mint;
+    background: $white;
+    @include transition(all, 0.2s, ease-in-out)
+  }
+}

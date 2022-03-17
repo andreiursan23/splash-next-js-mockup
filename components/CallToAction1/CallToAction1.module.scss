@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  padding: 3.125em;
+  text-align: center;
+  font-family: $open-sans;
+  background: $greenish-white;
+  line-height: 1.375;
+  margin-bottom: 2.5em;
+
+  .title {
+    color: $green;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 0.9375rem;
+  }
+
+  .btn {
+    color: $white;
+    background: $green-mint;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    padding: 0.5rem 1.5rem;
+    margin: 1.25rem 0 0.625rem 0;
+    border-radius: 0.3125rem;
+    border: 2px $green-mint solid;
+    @include transition(all, 0.2s, ease-in-out);
+  }
+
+  .btn:focus,
+  .btn:hover {
+    cursor: pointer;
+    color: $green-mint;
+    background: $white;
+    @include transition(all, 0.2s, ease-in-out);
+  }
+
+  // Modal styles
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+
+    .modal_container {
+      position: relative;
+      background: $white;
+      padding: 1.875em;
+      width: 95%;
+      max-width: 1000px;
+      border-radius: 0.625rem;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .close_icon {
+        cursor: pointer;
+        position: absolute;
+        padding: 0.625em;
+        top: 0;
+        right: 0;
+      }
+
+      p {
+        line-height: 1.375;
+      }
+
+      p:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
