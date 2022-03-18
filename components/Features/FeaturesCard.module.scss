@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 23.75rem;
+  padding: 1.25em;
+  margin-bottom: 1.875rem;
+  border-radius: 0.625rem;
+  background: $light-blue;
+  font-family: $open-sans;
+  line-height: 1.375;
+  position: relative;
+
+  .text {
+    margin-top: 1.25em;
+    max-width: 21.25rem;
+  }
+
+  .new {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $red;
+  }
+}
+
+.container:not(:nth-of-type(3n)) {
+  margin-right: 1.875rem;
+}

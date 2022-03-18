@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
+  .modal_container {
+    position: relative;
+    background: $white;
+    padding: 1.875em;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .close_icon {
+      cursor: pointer;
+      position: absolute;
+      padding: 0.625em;
+      top: 0;
+      right: 0;
+    }
+
+    p {
+      line-height: 1.375;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles//variables";
+
+.bg {
+  font-family: $open-sans;
+  background: $greenish-white;
+
+  .container {
+    padding: 1.875rem 0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.375;
+
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .headline {
+      order: 1;
+      max-width: 23.75rem;
+    }
+
+    .links {
+      order: 2;
+      max-width: 23.75rem;
+      text-align: center;
+    }
+
+    img {
+      order: 3;
+      max-width: 18.75rem;
+      height: 5.4375rem;
+    }
+  }
+}

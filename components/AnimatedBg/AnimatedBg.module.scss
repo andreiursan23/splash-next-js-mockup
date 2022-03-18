@@ -1,0 +1,24 @@
+.parallax {
+  background: url("/scooters_parallax.jpg") no-repeat fixed;
+  background-size: 100% auto;
+  height: 50.378vh;
+  margin: 0 0 3.125em 0;
+
+  .image {
+    display: none;
+  }
+}
+
+@media (max-width: 856px) {
+  .parallax {
+    background: none;
+    width: 95%;
+    margin: 0 auto 3.125em auto;
+
+    .image {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+}

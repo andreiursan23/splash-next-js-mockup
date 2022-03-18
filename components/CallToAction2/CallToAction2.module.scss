@@ -13,6 +13,10 @@
     color: $green;
     font-size: 1.875rem;
     margin-bottom: 1.25rem;
+
+    .block {
+      display: block;
+    }
   }
 
   p:not(:last-of-type) {

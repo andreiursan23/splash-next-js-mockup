@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.container {
+  margin: 3.125em 0 1.25rem 0;
+  text-align: center;
+
+  .title {
+    font-family: $open-sans;
+    font-size: 1.875rem;
+    line-height: 1.35;
+    margin-bottom: 3.125rem;
+  }
+
+  .cards_container {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

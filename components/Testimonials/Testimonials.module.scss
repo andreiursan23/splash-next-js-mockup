@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.container {
+  font-family: $open-sans;
+  line-height: 1.375;
+  text-align: center;
+
+  .title {
+    font-size: 1.875rem;
+    margin-bottom: 3.125rem;
+
+    .block {
+      display: block;
+    }
+  }
+
+  .quote_container {
+    text-align: left;
+    background: $green-mint-light;
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto 3.125rem auto;
+    padding: 7.6875rem 6.25rem 6.4375rem 6.25rem;
+    border-top-right-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+    position: relative;
+
+    .body {
+      margin-bottom: 0.9275rem;
+    }
+
+    .author {
+      color: $blue-darker;
+    }
+
+    .left_quote {
+      position: absolute;
+      top: -10px;
+      left: -14px;
+    }
+
+    .right_quote {
+      position: absolute;
+      bottom: -10px;
+      right: -14px;
+    }
+  }
+}
