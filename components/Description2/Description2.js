@@ -19,8 +19,8 @@ function Description2() {
       </div>
       <Image
         src="/scooters_2.jpg"
-        height={575}
-        width={575}
+        height={738}
+        width={738}
         alt="Three Splash electric scouters"
         className={styles.col}
       />

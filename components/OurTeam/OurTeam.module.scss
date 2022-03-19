@@ -16,3 +16,13 @@
     flex-flow: wrap;
   }
 }
+
+@media (max-width: 936px) {
+  .container {
+    .members_container {
+      justify-content: start;
+      flex-flow: nowrap;
+      overflow: scroll;
+    }
+  }
+}

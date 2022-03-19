@@ -1,7 +1,5 @@
 // NextJS imports
 import Head from "next/head";
-// Styles imports
-import styles from "../styles/Home.module.scss";
 // Component imports
 import Navbar from "../components/Navbar/Navbar";
 import BannerCarousel from "../components/BannerCarousel/BannerCarousel";
@@ -17,6 +15,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import FrequentlyAskedQuestions from "../components/FAQ/FrequentlyAskedQuestions";
 import ContactUs from "../components/ContactUs/ContactUs";
 import FooterNav from "../components/FooterNav/FooterNav";
+import Copyright from "../components/Copyright/Copyright";
 
 export default function Home() {
   return (
@@ -65,7 +64,7 @@ export default function Home() {
 
       <footer>
         <FooterNav />
-        {/* <Copyright /> */}
+        <Copyright />
       </footer>
     </>
   );

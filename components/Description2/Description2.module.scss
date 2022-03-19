@@ -23,3 +23,22 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: left;
+
+    .col {
+      width: 100%;
+    }
+
+    .text {
+      padding-right: 0;
+
+      .title {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

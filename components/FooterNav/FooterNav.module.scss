@@ -24,12 +24,49 @@
       order: 2;
       max-width: 23.75rem;
       text-align: center;
+
+      .link:focus,
+      .link:hover {
+        text-decoration: none;
+      }
     }
 
-    img {
+    .logo {
       order: 3;
       max-width: 18.75rem;
       height: 5.4375rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .bg {
+    text-align: center  ;
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+
+
+      .headline {
+        order: 2;
+        max-width: 23.75rem;
+        margin: 0 auto 1.25rem auto;
+      }
+  
+      .links {
+        order: 3;
+        max-width: 23.75rem;
+        text-align: center;
+        margin: 0 auto;
+      }
+  
+      .logo {
+        order: 1;
+        max-width: 18.75rem;
+        height: 5.4375rem;
+        margin: 0 auto 1.25rem auto;
+      }
     }
   }
 }

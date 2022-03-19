@@ -23,3 +23,21 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+
+    .col {
+      width: 100%;
+    }
+
+    .text {
+      padding-left: 0;
+
+      .title {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -7,7 +7,11 @@ function FooterNav() {
       <div className="container">
         <div className={styles.container}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-lg-splash.svg" alt="Splash logo" />
+          <img
+            src="/logo-lg-splash.svg"
+            alt="Splash logo"
+            className={styles.logo}
+          />
 
           <div className={styles.headline}>
             <h3 className={styles.title}>Some headline</h3>
@@ -21,12 +25,24 @@ function FooterNav() {
           <div className={styles.links}>
             <h3 className={styles.title}>Other links</h3>
             <ul>
-              <li>Coffee</li>
-              <li>Tea</li>
-              <li>Water</li>
-              <li>Juice</li>
-              <li>Beer</li>
-              <li>Wine</li>
+              <li>
+                <a className={styles.link} href="#">Coffee</a>
+              </li>
+              <li>
+                <a className={styles.link} href="#">Tea</a>
+              </li>
+              <li>
+                <a className={styles.link} href="#">Water</a>
+              </li>
+              <li>
+                <a className={styles.link} href="#">Juice</a>
+              </li>
+              <li>
+                <a className={styles.link} href="#">Beer</a>
+              </li>
+              <li>
+                <a className={styles.link} href="#">Wine</a>
+              </li>
             </ul>
           </div>
         </div>

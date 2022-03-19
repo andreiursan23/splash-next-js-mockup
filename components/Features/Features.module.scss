@@ -18,3 +18,19 @@
     }
   }
 }
+
+@media (max-width: 862px) {
+  .cards_container {
+    .row {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 863px) and (max-width: 1262px) {
+  .cards_container {
+    .row {
+      justify-content: center;
+    }
+  }
+}

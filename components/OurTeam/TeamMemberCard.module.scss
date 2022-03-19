@@ -30,3 +30,23 @@
 .container:nth-of-type(4n) {
   margin: 0 0 2.5rem 0;
 }
+
+@media (max-width: 1262px) {
+  .container:nth-of-type(4n) {
+    margin: 0 2.5rem 2.5rem 0;
+  }
+
+  .container:nth-of-type(3n) {
+    margin: 0 0 2.5rem 0;
+  }
+
+  .container:last-of-type {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (max-width: 936px) {
+  .container:nth-of-type(3n) {
+    margin: 0 2.5rem 2.5rem 0;
+  }
+}

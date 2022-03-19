@@ -31,3 +31,21 @@
 .container:not(:nth-of-type(3n)) {
   margin-right: 1.875rem;
 }
+
+@media (max-width: 862px) {
+  .container {
+    min-width: 100%;
+
+    .text {
+      max-width: 21.25rem;
+      margin: 1.25em auto 0 auto;
+    }
+  }
+}
+
+@media (min-width: 863px) and (max-width: 1262px) {
+  .container:nth-of-type(3n) {
+    margin-right: 1.875rem;
+  }
+}
+

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.container {
+  background-color: $blue-darkest;
+  color: $white;
+  font-family: $open-sans;
+  line-height: 1.375;
+  text-align: right;
+
+  .copyright {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    text-align: center;
+  }
+}
