@@ -45,7 +45,7 @@ function FrequentlyAskedQuestions() {
   return (
     <div className={styles.container}>
       <div className="container">
-        <h2 className={styles.title}>FAQ</h2>
+        <h2 className={`${styles.title} subtitle`}>FAQ</h2>
 
         {FAQ.map((question) => (
           <Accordion

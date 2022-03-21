@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.scss";
 function Testimonials() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>
+      <h1 className={`${styles.title} subtitle`}>
         Don’t trust us, <span className={styles.block}>trust them</span>
       </h1>
 

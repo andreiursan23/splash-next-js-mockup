@@ -8,7 +8,7 @@ function FooterNav() {
         <div className={styles.container}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-lg-splash.svg"
+            src="/logo-lg-splash.png"
             alt="Splash logo"
             className={styles.logo}
           />

@@ -12,7 +12,7 @@ function CallToAction1() {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Some boring text, good for SEO</h2>
+      <h2 className={`${styles.title} subtitle`}>Some boring text, good for SEO</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
         consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi eget

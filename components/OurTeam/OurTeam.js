@@ -8,7 +8,7 @@ import { members } from "./members-db";
 function OurTeam() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Our fantastic team</h2>
+      <h2 className={`${styles.title} subtitle`}>Our fantastic team</h2>
 
       <div className={styles.members_container}>
         {members.map((member) => (

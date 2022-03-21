@@ -39,6 +39,16 @@
   }
 }
 
+@media (max-width: 800px) {
+  .bg {
+    .container {
+      .title {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .bg {
     text-align: center  ;

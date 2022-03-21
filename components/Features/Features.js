@@ -8,7 +8,7 @@ import { features } from "./features-db";
 function Features() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Our main features</h2>
+      <h2 className={`${styles.title} subtitle`}>Our main features</h2>
 
       <div className={styles.cards_container}>
         <div className={styles.row}>

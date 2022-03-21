@@ -6,15 +6,14 @@
   max-width: 40rem;
   margin: 0 auto 3.125rem auto;
   border: 1px solid $blue-darker;
-  font-family: $open-sans;
   line-height: 1.365;
+  font-family: $open-sans;
 
   .form_container {
     padding: 2.5rem;
 
     .form_title {
       text-align: center;
-      font-size: 1.875rem;
       color: $green;
       margin-bottom: 2.5rem;
     }
@@ -28,11 +27,19 @@
         margin-bottom: 1rem;
       }
 
-      .input {
+      .input,
+      .input_textarea {
         margin-bottom: 1.25rem;
         border: 1px $green solid;
         border-radius: 0.3125rem;
         padding: 0.21875rem 0.5rem;
+      }
+
+      .input_textarea {
+        resize: none;
+        font-family: $open-sans;
+        line-height: 1.365;
+        font-size: 1.25rem;
       }
 
       .btn {
@@ -47,7 +54,6 @@
         border-radius: 0.3125rem;
         border: 2px solid $blue-darker;
         @include transition(all, 0.2s, ease-in-out);
-
       }
 
       .btn:focus,
@@ -58,5 +64,11 @@
         @include transition(all, 0.2s, ease-in-out);
       }
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
   }
 }

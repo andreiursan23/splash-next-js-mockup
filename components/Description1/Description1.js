@@ -6,7 +6,7 @@ function Description1() {
   return (
     <div className={styles.container}>
       <div className={`${styles.col} ${styles.text}`}>
-        <h2 className={styles.title}>Nice scooters, right?</h2>
+        <h2 className={`${styles.title} subtitle`}>Nice scooters, right?</h2>
         <p>
           Maecenas eget feugiat augue. Nulla faucibus vitae urna sit amet
           efficitur. Praesent justo mauris, facilisis eu magna et, varius

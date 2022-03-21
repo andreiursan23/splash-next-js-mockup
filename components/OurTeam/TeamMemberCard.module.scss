@@ -27,11 +27,23 @@
   }
 }
 
+@media (max-width: 800px) {
+  .container {
+    .name {
+      font-size: 1.375rem;
+    }
+    
+    .subtitle {
+      font-size: 1.125rem;
+    }
+  }
+}
+
 .container:nth-of-type(4n) {
   margin: 0 0 2.5rem 0;
 }
 
-@media (max-width: 1262px) {
+@media (max-width: 1280px) {
   .container:nth-of-type(4n) {
     margin: 0 2.5rem 2.5rem 0;
   }

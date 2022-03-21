@@ -10,13 +10,13 @@
 
     .nav_link {
       text-decoration: none;
-      @include transition(color, 0.2s, ease-in-out)
+      @include transition(color, 0.2s, ease-in-out);
     }
 
     .nav_link:focus,
     .nav_link:hover {
       color: $green-mint;
-      @include transition(color, 0.2s, ease-in-out)
+      @include transition(color, 0.2s, ease-in-out);
     }
   }
 
@@ -29,13 +29,41 @@
     padding: 0.375em 1.375em;
     border: 0.125em solid $green-mint;
     border-radius: 0.3125em;
-    @include transition(all, 0.2s, ease-in-out)
+    @include transition(all, 0.2s, ease-in-out);
   }
 
   .cta_btn:focus,
   .cta_btn:hover {
     color: $green-mint;
     background: $white;
-    @include transition(all, 0.2s, ease-in-out)
+    @include transition(all, 0.2s, ease-in-out);
+  }
+}
+
+@media (max-width: 800px) {
+  .nav_list {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2rem;
+
+    .nav_list_item {
+      margin: 0 0 1rem 0;
+
+      .nav_link {
+        text-decoration: none;
+        @include transition(color, 0.2s, ease-in-out);
+      }
+
+      .nav_link:focus,
+      .nav_link:hover {
+        color: $green-mint;
+        @include transition(color, 0.2s, ease-in-out);
+      }
+
+      .cta_btn {
+        display: inline-block;
+        margin: 0.5625rem 0 0 0;
+      }
+    }
   }
 }

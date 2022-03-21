@@ -10,7 +10,7 @@ function ContactUs() {
   return (
     <div className={styles.container}>
       <div className={styles.form_container}>
-        <p className={styles.form_title}>What about you?</p>
+        <p className={`${styles.form_title} subtitle`}>What about you?</p>
         <form onSubmit={contactUs} className={styles.form}>
           <label htmlFor="name" className={styles.label}>
             Full name
@@ -37,12 +37,12 @@ function ContactUs() {
           <label htmlFor="message" className={styles.label}>
             How can we help you?
           </label>
-          <input
+          <textarea
             id="message"
-            type="text"
+            rows={5}
             autoComplete="message"
             required
-            className={styles.input}
+            className={styles.input_textarea}
           />
 
           <button className={styles.btn} type="submit">

@@ -13,7 +13,7 @@ function CallToAction2() {
   return (
     <div className="container">
       <div className={styles.container}>
-        <h2 className={styles.title}>
+        <h2 className={`${styles.title} subtitle`}>
           Some more boring text, <span className={styles.block}>also good for SEO</span>
         </h2>
         <p>
