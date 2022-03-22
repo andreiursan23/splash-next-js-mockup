@@ -4,36 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/dist/client/image";
 // Styles imports
 import styles from "./BannerCarousel.module.scss";
-// Framer Motion imports
-import { motion, AnimatePresence } from "framer-motion";
-
-const slides = [
-  {
-    id: 0,
-    title: "Welcome to our amazing website",
-    subtitle: "Lorem ipsum dolor sit amet",
-    image: "/banner_img1.jpg",
-  },
-  {
-    id: 1,
-    title: "Enjoy the most colourful rides with us",
-    subtitle:
-      "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor, sit amet ipsum dolor sit amet ipsum dolor sit amet",
-    image: "/banner_img2.jpg",
-  },
-  {
-    id: 2,
-    title: "Again welcome to our amazing website",
-    subtitle: "Lorem ipsum dolor sit amet ipsum dolor.",
-    image: "/banner_img1.jpg",
-  },
-  {
-    id: 3,
-    title: "Welcome to our amazing website",
-    subtitle: "Lorem ipsum dolor sit amet ipsum dolor.",
-    image: "/banner_img2.jpg",
-  },
-];
+// Database imports
+import { slides } from "./slides-db";
 
 function BannerCarousel() {
   const [slideCounter, setSlideCounter] = useState(0);
@@ -64,7 +36,14 @@ function BannerCarousel() {
       <div className={styles.carousel}>
         {slides.map((slide) => (
           <div key={slide.id}>
-            <div className={styles.carousel_text}>
+            {/* Slide text */}
+            <div
+              className={
+                slideCounter === slide.id
+                  ? styles.carousel_text_visible
+                  : styles.carousel_text
+              }
+            >
               <div className={`${styles.container} container`}>
                 <h1 className={`${styles.carousel_title} title`}>
                   {slide.title}
@@ -72,6 +51,7 @@ function BannerCarousel() {
                 <p className={styles.carousel_subtitle}>{slide.title}</p>
               </div>
             </div>
+            {/* Slide images */}
             <div
               className={
                 slideCounter === slide.id
@@ -84,7 +64,6 @@ function BannerCarousel() {
                   src={slide.image}
                   alt="Five Splash electric scouters with rainbow stairs in the background"
                   layout="responsive"
-                  priority
                   width={1920}
                   height={850}
                 />

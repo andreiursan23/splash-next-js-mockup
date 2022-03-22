@@ -8,6 +8,7 @@
   height: max-content;
   background: rgba(0, 0, 0, 0.6);
 
+  // Carousel image
   .carousel_item {
     position: relative;
     z-index: -1;
@@ -24,7 +25,19 @@
     @include fadeOut;
   }
 
+  .image {
+    position: relative;
+    z-index: -1;
+  }
+
+  // Carousel text
   .carousel_text {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  .carousel_text_visible {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -45,11 +58,7 @@
     }
   }
 
-  .image {
-    position: relative;
-    z-index: -1;
-  }
-
+  // Slide counter
   .dots_container {
     display: flex;
     justify-content: center;
@@ -81,7 +90,7 @@
 }
 
 @media (max-width: 800px) {
-  .carousel_item {
+  .carousel {
     .dots_container {
       bottom: 0.5rem;
 
@@ -98,3 +107,26 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .carousel {
+    .dots_container {
+      bottom: 0.25rem;
+
+      .dot::after {
+        margin: 0 0.25rem;
+        height: 0.35rem;
+        width: 0.35rem;
+      }
+      .dot_selected::after {
+        margin: 0 0.25rem;
+        height: 0.35rem;
+        width: 0.35rem;
+      }
+    }
+  }
+}
+
+
+
+

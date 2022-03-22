@@ -143,15 +143,11 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .text-bold {
   font-weight: 700;
-}
-
-.no-scroll {
-  max-width: 100%;
-  overflow-y: hidden;
 }
 
 .title {
@@ -170,5 +166,16 @@ html {
 
   .subtitle {
     font-size: 1.625rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
   }
 }
