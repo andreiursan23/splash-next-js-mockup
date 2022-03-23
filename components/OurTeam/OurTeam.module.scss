@@ -25,9 +25,8 @@
     position: relative;
 
     .members_container {
-      padding-left: 1.625rem;
-      justify-content: start;
-      flex-flow: nowrap;
+      justify-content: center;
+      flex-flow: wrap;
     }
 
     .carousel_controls {
@@ -36,12 +35,12 @@
       justify-content: space-between;
       visibility: visible;
       position: absolute;
-      top: 31%;
+      top: 12rem;
 
       .btn {
         cursor: pointer;
         border: none;
-        background: $white;
+        background: transparent;
       }
     }
   }

@@ -1,9 +1,22 @@
 // Style imports
 import styles from "./TeamMemberCard.module.scss";
 
-function TeamMemberCard({ image, name, subtitle, description }) {
+function TeamMemberCard({
+  id,
+  image,
+  name,
+  subtitle,
+  description,
+  visibleSlides,
+}) {
   return (
-    <div className={styles.container}>
+    <div
+      className={
+        id === visibleSlides[0] || id === visibleSlides[1]
+          ? styles.container_visible
+          : styles.container
+      }
+    >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={image}

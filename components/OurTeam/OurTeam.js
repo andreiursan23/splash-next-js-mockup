@@ -1,3 +1,5 @@
+// React imports
+import { useState } from "react";
 // Styles imports
 import styles from "./OurTeam.module.scss";
 // Component imports
@@ -6,12 +8,28 @@ import TeamMemberCard from "./TeamMemberCard";
 import { members } from "./members-db";
 
 function OurTeam() {
+  const [visibleSlides, setVisibleSlides] = useState([1, 2]);
+
   const previousSlide = () => {
-    console.log("prev slide");
+    if (visibleSlides[0] === 1) {
+      setVisibleSlides([members.length, members.length + 1]);
+    } else {
+      const newSlide1 = visibleSlides[0] - 1;
+      const newSlide2 = visibleSlides[1] - 1;
+
+      setVisibleSlides([newSlide1, newSlide2]);
+    }
   };
 
   const nextSlide = () => {
-    console.log("next slide");
+    if (visibleSlides[1] >= members.length + 1) {
+      setVisibleSlides([1, 2]);
+    } else {
+      const newSlide1 = visibleSlides[0] + 1;
+      const newSlide2 = visibleSlides[1] + 1;
+
+      setVisibleSlides([newSlide1, newSlide2]);
+    }
   };
 
   return (
@@ -22,10 +40,12 @@ function OurTeam() {
         {members.map((member) => (
           <TeamMemberCard
             key={member.id}
+            id={member.id}
             image={member.image}
             name={member.name}
             subtitle={member.subtitle}
             description={member.description}
+            visibleSlides={visibleSlides}
           />
         ))}
       </div>

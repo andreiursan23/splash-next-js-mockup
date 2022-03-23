@@ -1,6 +1,8 @@
 @import "../../styles/variables";
+@import "../../styles//mixins";
 
-.container {
+.container,
+.container_visible {
   width: 16.875rem;
   margin: 0 2.5rem 2.5rem 0;
 
@@ -28,7 +30,8 @@
 }
 
 @media (max-width: 800px) {
-  .container {
+  .container,
+  .container_visible {
     .name {
       font-size: 1.375rem;
     }
@@ -39,34 +42,56 @@
   }
 }
 
-.container:nth-of-type(4n) {
+.container:nth-of-type(4n),
+.container_visible:nth-of-type(4n) {
   margin: 0 0 2.5rem 0;
 }
 
 @media (max-width: 1280px) {
-  .container:nth-of-type(4n) {
+  .container:nth-of-type(4n),
+  .container_visible:nth-of-type(4n) {
     margin: 0 2.5rem 2.5rem 0;
   }
 
-  .container:nth-of-type(3n) {
+  .container:nth-of-type(3n),
+  .container_visible:nth-of-type(3n) {
     margin: 0 0 2.5rem 0;
   }
 
-  .container:last-of-type {
+  .container:last-of-type,
+  .container_visible:last-of-type {
     margin: 0 2.5rem;
   }
 }
 
 @media (max-width: 953px) {
+  .container,
+  .container_visible {
+    margin: 0 1.875rem 2.5rem 1.875rem;
+  }
+
+  .container:nth-of-type(3n),
+  .container_visible:nth-of-type(3n) {
+    margin: 0 1.875rem 2.5rem 1.875rem;
+  }
+
+  .container:nth-of-type(4n),
+  .container_visible:nth-of-type(4n) {
+    margin: 0 1.875rem 2.5rem 1.875rem;
+  }
+
   .container {
-    margin: 0 1.875rem 2.5rem 1.875rem;
+    display: none;
   }
 
-  .container:nth-of-type(3n) {
-    margin: 0 1.875rem 2.5rem 1.875rem;
+  .container_visible {
+    @include fadeOut();
   }
 
-  .container:nth-of-type(4n) {
-    margin: 0 1.875rem 2.5rem 1.875rem;
+  .container:last-of-type,
+  .container_visible:last-of-type {
+    margin: 0 1.875rem;
   }
 }
+
+
